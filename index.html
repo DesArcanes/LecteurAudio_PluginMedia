@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="test" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>index</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="cordova.js"></script>
+
+    <script src="js/app4.js"></script>
+  </head>
+    
+  <body ng-controller="AudioCtrl">   
+  
+	<ion-view>
+	<ion-content>
+		
+     <h1>Lecteur 1</h1>
+     <button ng-click="play()">Lecture</button>
+     <button ng-click="pause()">Pause</button>
+     <button ng-click="stop()">Stop</button>
+     
+	</ion-content>
+	</ion-view>
+	
+  </body>
+
+</html>
