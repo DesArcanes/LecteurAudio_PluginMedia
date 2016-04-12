@@ -44,32 +44,3 @@ angular.module('test', ['ionic', 'ngCordova'])
 
 
 
-module.controller('MyCtrl', function($scope, $cordovaMedia) {
-
-  var src = "/src/audio.mp3";
-  var media = $cordovaMedia.newMedia(src);
-
-  media.play(); // Android
-
-  media.pause();
-
-  media.stop();
-
-  media.release();
-
-  media.seekTo(5000); // milliseconds value
-
-  media.setVolume(0.5);
-
-  media.startRecord();
-
-  media.stopRecord();
-
-  // media.getDuration(media); not working yet
-
-  // media.getCurrentPosition().then(...); not working yet
-});
-
-
-
-
